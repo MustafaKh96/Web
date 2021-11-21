@@ -1,0 +1,22 @@
+#h1{
+    color: brown; /* Farbe */
+    text-align: center; /* Ausrichtung */
+    text-decoration: underline; /* Dekoration */
+    text-decoration-color:blue;
+    text-decoration-style: dotted;
+    text-shadow: 2px 2px 5px red; /* für Schatten 
+    (horizontal,vertikal,unschärfeeffekt,farbe) */
+    text-transform: uppercase; /* Umwandlung */
+    letter-spacing: 10px; /* Die breite zwischen den Buchstaben */
+    word-spacing: 10px; /* Die breite zwischen den Worten */
+}
+.p1{
+    line-height: 30px; /* Die weite zwischen den Zeilen */
+}
+#h2{
+    font-family:fantasy; /* Art der Schrift */
+    font-style: italic; /* schief */
+    font-weight:lighter; /* Dicke der Schrifts */
+    font-size: 40px; /* Die Grüße der Schrifts */
+    text-shadow: 2px 2px 5px red;
+}

@@ -1,0 +1,12 @@
+console.log("Hallo World");
+console.log(3+3);
+console.table([1,2,3,4]);
+console.error("Es gibt einen Fehler");
+console.warn("Es gibt ein Warning");
+console.time('t');
+console.log("Hallo World");
+console.log("Hallo World");
+console.log("Hallo World");
+console.log("Hallo World");
+console.timeEnd('t');
+// console.clear();

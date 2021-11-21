@@ -1,0 +1,28 @@
+/* Mit color: */
+.headline{
+    color: brown; 
+}
+
+/* Mit rgb(red, green, blue): 
+   (min: 0 0 0),(max: 256,256,256) */
+#p1{
+    color: rgb(11, 200, 150);
+}
+
+/* Mit rgba(red, green, blue, alpha): 
+   (min: 0 0 0 0),(max: 256,256,256, 1) 
+   Alpha von 0.0 bis 1.0 */
+#p2{
+    color: rgba(11, 55, 200, 0.1);
+}
+
+/* Mit hex: #rrggbb (redred,greengreen,blueblue)
+   (min: #000000),(max: #ffffff) */
+#p3{
+    color: #ff0000;
+}
+
+/* hsl(hue, saturation, lightness); */
+#p4{
+    color: hsl(40, 100%, 10%);
+}

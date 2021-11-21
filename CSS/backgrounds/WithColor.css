@@ -1,0 +1,7 @@
+body{
+    background-image: brown;
+}
+div{
+    background-color: burlywood;
+    opacity: 0.4; /* Durchsichtigkeit */
+}

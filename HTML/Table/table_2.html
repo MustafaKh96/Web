@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="table.css">
+    <title>Table</title>
+</head>
+<body>
+        <!--Mit Bordere (CSS) für klarheit-->
+    
+        <!--Die Atributte:
+            1) colspan: Anzahl der Spalten
+            2) rowspan: Anzahl der Zeilen-->
+            <!--(1)-->
+            <table class="Table">
+                <tr>
+                    <th colspan="2">Vorname</th>
+                    <!--<th>Nachname</th>-->
+                    <th>Alter</th>
+                </tr>
+                <tr>
+                    <td class= "td">Musti</td>
+                    <td>KH</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>Abdul</td>
+                    <td>KH</td>
+                    <td>25</td>
+                </tr>
+            </table>
+            <!--(2)-->
+            <table>
+                <tr>
+                    <th rowspan="2">Vorname</th>
+                    <td>Musti</td>
+                    <td>Abdul</td>
+                </tr>
+                <tr>
+                    <!--<th>Nachname</th>-->
+                    <td>KH</td>
+                    <td>KH</td>
+                </tr>
+                <tr>
+                    <th>Alter</th>
+                    <td>25</td>
+                    <td>25</td>
+                </tr>
+            </table>
+    
+</body>
+</html>
