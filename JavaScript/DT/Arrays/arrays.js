@@ -55,9 +55,20 @@ const arr7 = [1,2,3,4,5,6];
 arr7.reverse(); // [6,5,4,3,2,1]
 
 //------------------------------
+// Sorting:
+const buchstaben = ['b','a','d','r','e'];
+buchstaben.sort(); // ['a', 'b', 'd', 'e', 'r']
+const zahlen = [2,9,5,7,4,8,1];
+zahlen.sort(); // [1, 2, 4, 5, 7, 8, 9]
+zahlen.sort(function(x,y){
+    return y-x;
+}); // [9, 8, 7, 5, 4, 2, 1]
+
+
+//------------------------------
 // toString():
 let s1 = arr7.toString();
 let s2 = arr7.join("*"); // 6*5*4*3*2*1
 
 
-console.log(f); // true
+console.log(zahlen); // true
