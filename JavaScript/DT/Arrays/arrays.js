@@ -56,11 +56,8 @@ arr7.reverse(); // [6,5,4,3,2,1]
 
 //------------------------------
 // toString():
-let f = arr7.join("*");
-
-
-
-
+let s1 = arr7.toString();
+let s2 = arr7.join("*"); // 6*5*4*3*2*1
 
 
 console.log(f); // true
