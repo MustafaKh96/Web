@@ -1,0 +1,30 @@
+h1{
+    border-style:double;
+    /* Es gibt auch verschiedene viele verschiedene Style
+    wie:  double, dotted, solid, inset usw */
+    border-width: 20px;
+    /* 
+    gibt an, wie dick der Border sein soll. 
+    Die border-width Eigenschaft kann einen bis vier Werte haben (für den oberen Rand, den rechten Rand, den unteren Rand und den linken Rand).
+    */
+    border-radius: 20px;
+    /* gibt an, wie rund der Border sein soll. */
+    border-color: green;
+    /* 
+    gibt dei Farbe vom Border an.
+    Die border-colorEigenschaft kann einen bis vier Werte haben (für den oberen Rand, den rechten Rand, den unteren Rand und den linken Rand).  
+    */
+
+    /* 
+    Man kann aber auch den Border nur unten, open, links oder rechts definieren:
+    Oder alle zusammen aber unterschiedlich. D.h. uben ist zumBeispiel solide unten ist double usw. =>
+    border-bottom-style: solid ; Nur unten
+    border-top-style: solid ; Nur open
+    border-left-style: solid ; Nur links
+    border-right-style: solid ; Nur rechts
+    Dann hat man auch hier die üblichen Eigenschaften, wie z.B:
+    border-left-color
+    border-left-width
+    border-right-radius
+    */
+}
