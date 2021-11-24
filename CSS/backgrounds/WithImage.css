@@ -3,5 +3,10 @@ body{
     url("https://upload.wikimedia.org/wikipedia/de/a/aa/Fc_barcelona.svg");
     background-repeat: no-repeat;
     background-size: cover; /*contain: open links, oder 50px: auch open links*/
-    /*background-origin:  gibt die Ursprungsposition eines Hintergrundbildes an.*/
+    /*
+    background-origin:  
+    gibt die Ursprungsposition eines Hintergrundbildes an.
+    background-attachment: fixed; => wird NICHT gescroolt.
+    background-attachment: scroll; => wird gescroolt.
+    */
 }
