@@ -1,0 +1,58 @@
+/*Wichtige Begriffe:
+    Spalten: eine vertikalen Linien auf der Webseite.
+    Zeilen: Die horizontalen Linien auf der Webseite.
+    Lücken: Die Zwischenräume zwischen den einzelnen Spalten/Reihen werden Lücken genannt.
+            gap: für Lücken von Zeilen und Spalten, oder sowohl Zeilen als auch Spalten:
+            z.B: grid-gap: 50px 20px; Für Zeilen * Spalten.
+                 grid-gap: 50px; Für Zeilen & Spalten.
+            kann auch verwendet werden, um sowohl die Zeilenlücke als auch die Spaltenlücke in einem Wert festzulegen:
+            grid-gap: 50px;
+    Anzahl der Spalten:
+        grid-template-columns: Gibt Anzahl der Spalten,
+            z.B: grid-template-columns: 30px 20px 50px => 3 Spalten mit den jeweiligen Größen.
+            1fr: die übrige Größe bzw. Länge, z.B: grid-template-columns: 20px 20px 1fr;
+            Anderes Beispiel: grid-template-columns: auto auto auto;
+    Platzieren:
+        grid-column-start: wo ein Item anfängt.
+        grid-column-end: und wo endet.
+        grid-column: wo anfängt/ wo endet; z.B: grid-column:1/3;
+    align-content: wird verwendet, um das gesamte Items innerhalb des Containers vertikal auszurichten.
+                   start, center, end, ..
+    justify-content: wird verwendet, um das Items innerhalb des Containers auszurichten.
+*/
+
+.container{
+    border: 1px solid black;
+    background-color: darkcyan;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px 20px;
+
+}
+
+.item{
+    border: 1px solid black;
+    background-color: darkturquoise;
+    padding: 30px;
+    text-align: center;
+}
+
+#item1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+/*
+#item2{
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+=> tatsächlich haben wir keine Spalte 5, sondern höchstens Spalte 4:
+   denn grid-template-columns: (Spalte1) auto (Spalte2) auto (Spalte3) auto (Spalte4);
+   Aber wenn ich das so schreibe wie bei item1 , dann wird eine Spalte 5 erzeugt.
+*/
+
+#item9{
+    grid-column: 1/4;
+}

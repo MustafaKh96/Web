@@ -1,0 +1,57 @@
+/*
+Container:
+1) Der Container wird flexibel, indem die display: flex;
+2) Die flex-direction Eigenschaft definiert, in welche Richtung die Flex-Items liegen.
+    => flex-direction: column; von obern nach unten
+    oder flex-direction: column-reverse; von obern nach unten, aber umgekehrt., ....
+3) flex-wrap: gibt an, ob die Flex-Elemente umbrochen werden sollen oder nicht.
+    D.h: flex-wrap: wrap; => bei Bedarf werden die Itm's umbrochen.
+         flex-wrap: nowrap; => werden die Itm's NICHT umbrochen.
+4) flex-flow: flex-directionund flex-wrap;
+5) align-items: & justify-content: werden verwendet, um die Flex-Elemente auszurichten.
+Item's:
+1) odner: gibt die Reihenfolge der Flex-Elemente an.
+    #item1{
+    order: 7; => dann ist Item1 auf Position 7.
+    } => wenn man irgendwas ordent, dann muss alle Item's ordnen.
+2) flex-grow: gibt an, wie stark ein flexibles Element im Verhältnis zu den restlichen flexiblen Elementen wächst.
+    Der Wert muss eine Zahl sein, der Standardwert ist 0. Beispiel unten.
+3) Die flex-shrink: gibt an, wie sich ein Flex-Element zu den restlichen Flex-Elementen verkleinert.
+    Der Standardwert ist 1. => wenn ein Item größer wird, dann flex-shrink: 0;
+4) Die flex-basis: gibt die Länge eines flexiblen Elements an.
+    flex-basis: 200px;
+5) flex: flex-grow  flex-shrink  flex-basis;
+6) align-self: gibt die Ausrichtung des ausgewählten Elements innerhalb des flexiblen Containers an.
+    <div style="align-self: center">3</div> => Nur dieses Element steht in der Mitte.
+*/
+
+.container{
+    border: 1px solid black;
+    display: flex; /*Nur mit display: flex;, dann liegen die item's nebeneinander*/
+    flex-direction: row;
+}
+.item{
+    background-color: cornflowerblue;
+    padding: 30px;
+    margin: 20px;
+    text-align: center;
+}
+#item1{
+    order: 2;
+    flex-grow:1;
+
+}
+#item2{
+    order: 4;
+    flex-grow:1;
+}
+#item3{
+    order: 1;
+    flex-grow:1;
+}
+#item4{
+    order: 3;
+    flex-grow:8;
+}
+
+
