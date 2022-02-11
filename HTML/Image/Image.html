@@ -7,10 +7,64 @@
     <title>Image</title>
 </head>
 <body>
-    <img src="https://upload.wikimedia.org/wikipedia/de/a/aa/Fc_barcelona.svg" alt="FC-Barcelona">
-    <!--src: URL-->
-    <!--alt: Alternative; Wenn das Image aus irgendeinem 
+    <!--
+        Tag: <img>
+        src: URL
+        alt: Alternative; Wenn das Image aus irgendeinem 
         Grund NICHT angezeigt wird
-        Meistens wird hier die Beschreibung des Photos geschrieben z.B. ("Photo für HBRS")-->
+        Meistens wird hier die Beschreibung des Photos geschrieben z.B. ("Photo für HBRS")
+    -->
+    <img src="https://upload.wikimedia.org/wikipedia/de/a/aa/Fc_barcelona.svg" alt="FC-Barcelona">
+    <!--
+        Tag: <map>
+        Das  definiert eine Imagemap. 
+        Eine Imagemap: ist ein Bild mit anklickbaren Bereichen. 
+        Die Bereiche werden mit einem oder mehreren <area> Tags definiert.
+
+        1)  im Tag <img> kommt das Attribut usemap="#name"
+            Der usemap Wert beginnt mit einem Hash-Tag #, gefolgt vom Namen der Imagemap.
+
+        2)  <map name="name">
+                <area>
+                <area>
+            </map>
+            Das map hat areas.
+
+        3)  Ein anklickbarer Bereich wird über ein <area> Tag definiert.
+            <area> hat folgende Attribute:
+            shape="rect"
+            coords="x1 Pixel vom linken Rand, y1 Pixel vom oberen Rand,
+                    x2 Pixel vom linken Rand, y2 Pixel vom oberen Rand"
+            shape="circle"
+            coords="x,y,r" wo x und y die Koordinaten des Kreismittelpunkts und r ist Radius.
+            shape="poly"
+            coord="x1,y1,x2,y2,x3,y3,.."
+            enthält mehrere Koordinatenpunkte, wodurch eine aus geraden Linien gebildete Form (ein Polygon) entsteht.
+            shape="default" definiert das gesamte Photo.
+   -->
+   <img src="https://upload.wikimedia.org/wikipedia/de/a/aa/Fc_barcelona.svg" alt="FC-Barcelona" usemap="#myMap">
+   <map name="myMap">
+       <area shape="circle" coords="100,20,50" href="https://de.wikipedia.org/wiki/FC_Barcelona" alt="FC_Barcelona">
+   </map>
+
+   <!--
+        Tag: <picture>
+
+        ermöglicht es, unterschiedliche Bilder für unterschiedliche 
+        Geräte oder Bildschirmgrößen anzuzeigen.
+
+        Jedes <source> Element hat ein mediaAttribut, 
+        das definiert, wann das Bild am besten geeignet ist.
+
+        Man sollte immer das <img> Tag als letztes untergeordnetes Tag des <picture> Tags angeben.
+        Das <img> Element wird von Browsern verwendet, die das <picture> Tag nicht unterstützen, 
+        oder wenn keines der <source> Tags übereinstimmt.
+   -->
+   <picture>
+    <source media="(min-width: 450px)" srcset="https://upload.wikimedia.org/wikipedia/de/5/5c/Chelsea_crest.svg">
+    <source media="(min-width: 365px)" srcset="https://upload.wikimedia.org/wikipedia/de/0/09/Wappen_Manchester_City_2016.svg">
+    <img src="https://upload.wikimedia.org/wikipedia/de/a/aa/Fc_barcelona.svg">
+  </picture>
+    
 </body>
 </html>
