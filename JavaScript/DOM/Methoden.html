@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM_Methoden</title>
+</head>
+<body>
+    <!--
+    Jedes HTML-Element hat sowohl Methoden als auch Eigenschaften.
+    Methode:  ist eine Aktion, die Sie die Sie (auf HTML-Elementen) ausführen können. Z.B: getElementById().
+    Eigenschaft: sind Werte (von HTML-Elementen), die Sie festlegen oder ändern können. z.B: innerHTML.
+
+    Methoden:
+    ** Finden von HTML-Elementen **
+
+    document.getElementById(id) : Find an element by element id.
+    html: <p id="demo"></p>
+    JS: document.getElementById("demo").innerHTML = "Hallo Welt";
+    JS: const element = document.getElementById("demo"); => Hier habe ich das element in einer Variable.
+        element.innerHTML = "Hallo Welt";
+    => Hallo Welt.
+
+    document.getElementsByTagName(name) : Find elements by tag name.
+    html: <p></p>
+          <p></p>
+          <p></p>
+    JS: document.getElementsByTagName("p").innerHTML = "Hallo Welt";
+    JS: const element = document.getElementsByTagName("p"); => Hier habe ich ein Array von den Elementen
+                                                               mit  pTags in einer Variable.
+        => element[0].innerHTML = "Hallo Welt"; // Nur das erste Element zeigt Hallo Welt.
+
+    document.getElementsByClassName(name) : Find elements by class name
+    <Ist das gleiche wie "getElementsByTagName".>
+    
+
+
+
+
+
+
+
+    -->
+    
+</body>
+</html>
