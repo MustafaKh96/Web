@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+* {
+  box-sizing: border-box;
+}
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  color: white;
+}
+nav {
+  float: left;
+  width: 30%;
+  height: 300px;
+  background: #ccc;
+}
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px;
+}
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+    </style>
+</head>
+<body>
+    <!--
+        HTML hat mehrere semantische Elemente, 
+        die die verschiedenen Teile einer Webseite definieren.
+        <header>- Definiert eine Kopfzeile für ein Dokument oder einen Abschnitt.
+        <footer>- Definiert eine Fußzeile für ein Dokument oder einen Abschnitt.
+        <section>- Definiert einen Abschnitt in einem Dokument.
+        <nav>- Definiert eine Reihe von Navigationslinks
+    -->
+    <header>
+        <h1>Header</h1>
+    </header>
+    <section>
+        <nav>
+            <ul>
+              <li><a href="#">London</a></li>
+              <li><a href="#">Paris</a></li>
+              <li><a href="#">Tokyo</a></li>
+            </ul>
+        </nav>
+        <article>
+          <h1>Hallo Welt</h1>
+          <p>Hallo Welt</p>
+        </article>
+    </section>
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+</html>
