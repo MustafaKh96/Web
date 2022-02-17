@@ -1,0 +1,43 @@
+/*
+Definition:
+CSS steht für Cascading Style Sheets
+CSS ist die Sprache, die wir verwenden, um ein HTML-Dokument zu formatieren.
+CSS beschreibt, wie HTML-Elemente dargestellt werden sollen.
+---------------
+CSS Syntax:
+Selektor{
+    Eigenschaft:Wert; (Deklaration)
+    Eigenschaft:Wert; (Deklaration)
+}
+Der Selektor zeigt auf das HTML-Element, das formatiert werden muss.
+Ein Selektor enthält eine oder mehrere Deklarationen
+Jede Deklaration enthält einen CSS-Eigenschaft und einen Wert
+---------------
+CSS-Selektoren:
+1) Das CSS-Element Selektor z.B: p oder h1 usw.
+2) Der CSS-ID-Selektor z.B: #para1. (Ein ID-Name darf nicht mit einer Zahl beginnen!)
+3) Die CSS-Klasse Selector z.B: .center
+   Man kann auch angeben, dass nur bestimmte 
+   HTML-Elemente von einer Klasse
+   betroffen sein sollen.
+   => wenn h1 und p haben den Klassennamen (myClass)
+   dann schreibt man p.myClass{..} und wird NUR die Elemente von p 
+   von dieser Klasse betroffen
+4) Der CSS-Universalselektor: 
+   Der Universalselektor (*) selektiert alle HTML-Elemente auf der Seite.
+5) Der CSS-Gruppierungsselektor:
+   h1, h2, p {...}
+---------------
+Wie kann ich ein CSS hinzufügen:
+Es gibt dafür 3 Möglichkeiten:
+1) Externes CSS: <link rel="stylesheet" href="mystyle.css"> in <head>.
+2) Internes CSS: 
+in head:
+<style>
+    body {
+    background-color: white;
+    }
+</style>
+3) Inline-CSS: <p style="color:red;">This is a paragraph.</p>
+----------------
+*/
