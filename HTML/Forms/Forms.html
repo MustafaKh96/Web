@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <!--
+        Das HTML <form>-Element wird verwendet, 
+        um ein HTML-Formular für Benutzereingaben zu erstellen.
+        Das <form>Element ist ein Container für 
+        verschiedene Arten von Eingabeelementen.
+        Das HTML- <input>Element ist das am häufigsten 
+        verwendete Formularelement.
+        Ein <input>Element kann je nach type Attribut
+        auf viele Arten dargestellt werden.
+        Das <label>Tag definiert eine Bezeichnung 
+        für viele Formularelemente.
+        Das forAttribut des <label>Tags sollte 
+        gleich dem idAttribut des <input> Elements sein, 
+        um sie miteinander zu verbinden.
+    -->
+    <!--
+        Der <input type="text"> definiert ein einzeiliges
+        Eingabefeld für die Texteingabe.
+
+        Der <input type="password"> definiert ein einzeiliges
+        Eingabefeld für die Passwordeingabe.
+
+        Der <input type="submit"> definiert eine Schaltfläche
+        zum Senden der Formulardaten an einen Formularhandler.
+    -->
+    <form>
+        <label for="fname">User name:</label><br>
+        <input type="text" id="fname"><br>
+        <label for="lname">Password:</label><br>
+        <input type="password" id="lname"><br><br>
+        <input type="submit" value="senden">
+    </form>
+    <br>
+    <!--
+        Das <input type="radio"> definiert ein Optionsfeld.
+    -->
+    <form>
+        <input type="radio" id="html" name="fav_language">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language">
+        <label for="javascript">JavaScript</label>
+    </form>
+    <!--
+        Der <input type="checkbox"> definiert ein Kontrollkästchen .
+    -->
+    <br>
+    <form>
+        <input type="checkbox" id="vehicle1" name="vehicle1">
+        <label for="vehicle1"> HTML</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2">
+        <label for="vehicle2"> css</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3">
+        <label for="vehicle3"> JavaScript</label>
+    </form>
+<!--
+
+-->
+</body>
+</html>

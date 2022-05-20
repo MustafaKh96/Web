@@ -8,11 +8,16 @@
 </head>
 <body>
     <!--
+        Img-Elemente haben NUR ein öffnendes Tag ohne schließendes Tag. 
+        Ein Tag für ein Element ohne schließendes Tag wird 
+        als selbstschließendes Tag bezeichnet.
+
         Tag: <img>
         src: URL
         alt: Alternative; Wenn das Image aus irgendeinem 
         Grund NICHT angezeigt wird
         Meistens wird hier die Beschreibung des Photos geschrieben z.B. ("Photo für HBRS")
+        usemap = "#myMap" (Definiert anklickbare Bereiche mit <area>'s)
     -->
     <img src="https://upload.wikimedia.org/wikipedia/de/a/aa/Fc_barcelona.svg" alt="FC-Barcelona">
     <!--
@@ -31,7 +36,7 @@
             Das map hat areas.
 
         3)  Ein anklickbarer Bereich wird über ein <area> Tag definiert.
-            <area> hat folgende Attribute:
+            e<area> hat folgende Attribute:
             shape="rect"
             coords="x1 Pixel vom linken Rand, y1 Pixel vom oberen Rand,
                     x2 Pixel vom linken Rand, y2 Pixel vom oberen Rand"
@@ -39,7 +44,7 @@
             coords="x,y,r" wo x und y die Koordinaten des Kreismittelpunkts und r ist Radius.
             shape="poly"
             coord="x1,y1,x2,y2,x3,y3,.."
-            enthält mehrere Koordinatenpunkte, wodurch eine aus geraden Linien gebildete Form (ein Polygon) entsteht.
+            enthält mehrere Koordinatenpunkte, wodurch eine aus geraden Linien gebildete Form (ein Polygon) entstht.
             shape="default" definiert das gesamte Photo.
    -->
    <img src="https://upload.wikimedia.org/wikipedia/de/a/aa/Fc_barcelona.svg" alt="FC-Barcelona" usemap="#myMap">
