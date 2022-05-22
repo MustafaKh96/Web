@@ -8,29 +8,107 @@
 </head>
 <body>
     <!--
-        Das HTML <form>-Element wird verwendet, 
+    ----------------------------------------------------------------------------
+        Das HTML <form>-Element: wird verwendet, 
         um ein HTML-Formular für Benutzereingaben zu erstellen.
-        Das <form>Element ist ein Container für 
+        Das <form> Element ist ein Container für 
         verschiedene Arten von Eingabeelementen.
+        (Eingabetext, checkbox, usw.)
+        Attribute:
+        1) Das "action" Attribut definiert die Aktion, die beim Absenden
+        des Formulars ausgeführt werden soll.
+        Normalerweise werden die Formulardaten an eine Datei auf dem 
+        Server gesendet, wenn der Benutzer auf die Schaltfläche „Senden“ klickt.
+        2) Das "target" Attribut gibt an, wo die Antwort angezeigt werden soll, 
+        die nach dem Absenden des Formulars empfangen wird.
+        (_blank, _self, ..)
+        3) Das "method" Attribut gibt die beim Senden der Formulardaten 
+        zu verwendende HTTP-Methode an. (get, post)
+        4) Das "autocomplete" Attribut gibt an, ob ein Formular 
+        die automatische Vervollständigung ein- oder ausschalten soll.
+        Wenn die automatische Vervollständigung aktiviert ist, 
+        vervollständigt der Browser automatisch Werte basierend auf Werten,
+        die der Benutzer zuvor eingegeben hat.
+        => autocomplete = "off" // keine automatische Vervollständigung.
+           autocomplete = "on" // es gibt automatische Vervollständigung.
+        5) Das "novalidate" Attribut ist ein boolesches Attribut.
+        Wenn vorhanden, gibt es an, dass die Formulardaten (Eingabe) 
+        beim Senden nicht validiert werden sollen.
+        => z.B: <form action="/action_page.php" novalidate>
+    ----------------------------------------------------------------------------
         Das HTML- <input>Element ist das am häufigsten 
         verwendete Formularelement.
         Ein <input>Element kann je nach type Attribut
         auf viele Arten dargestellt werden.
-        Das <label>Tag definiert eine Bezeichnung 
+        Attribute:
+        1) type: definiert, wie das Eingabeformular aussehen soll.
+        text, button, checkbox, search, number, password, .... und vieles mehr
+        https://www.w3schools.com/html/html_form_input_types.asp
+
+        type="submit": definiert eine Schaltfläche zum Senden von Formulardaten 
+        an einen Formular-Handler.
+        Der Form-Handler ist typischerweise eine Serverseite mit 
+        einem Skript zur Verarbeitung von Eingabedaten.
+        Der Formular-Handler wird im action Attribut des Formulars angegeben.
+
+        2) value=".." Das Eingabeattribut value gibt einen Anfangswert 
+        für ein Eingabefeld an.
+
+        3) readonly: Das gibt an, dass ein Eingabefeld schreibgeschützt ist.
+
+        4) disabled: gibt an, dass ein Eingabefeld deaktiviert werden soll.
+        
+        5) size = 4 : Das gibt die sichtbare Breite eines Eingabefelds in Zeichen an.
+
+        6) maxlength = 4: gibt die maximal zulässige Anzahl von Zeichen in einem Eingabefeld an.
+
+        7) placeholder="Vorname": Das gibt einen kurzen Hinweis an, der den 
+        erwarteten Wert eines Eingabefelds beschreibt.
+
+        8) multiple: Das gibt an, dass der Benutzer mehr als einen
+        Wert in ein Eingabefeld eingeben darf.
+        <input type="file" id="files" name="files" multiple>
+        => Man kann mehr als eine Datei auswählen.
+
+        9) min und max : geben die minimalen und maximalen Werte für ein Eingabefeld an.
+        z.B:
+        <input type="number" id="quantity" name="quantity" min="1" max="5">
+        Man kann Zahlen NUR zwischen 1 und 5 wählen.
+
+        10) required: gibt an, dass vor dem Absenden des Formulars ein Eingabefeld 
+        ausgefüllt werden muss.
+
+        11) step=Nummer : gibt die zulässigen Nummernintervalle für ein Eingabefeld an.
+        z.B:
+        <input type="number" id="points" name="points" step="3">
+        => 3,6,9,...
+
+        12) autofocus: gibt an, dass ein Eingabefeld automatisch den Fokus 
+        erhalten soll, wenn die Seite geladen wird.
+
+        13) height und width: geben die Höhe und Breite eines <input type="image">Elements an.
+
+        14) autocomplete: gibt an, ob ein Formular oder ein Eingabefeld 
+        die automatische Vervollständigung ein- oder ausschalten soll.
+        
+        List:
+    -->
+    <form>
+        <input list="myList">
+        <datalist id="myList">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+    </form> <br><br>
+    <!--
+        Das <label> Tag definiert eine Bezeichnung 
         für viele Formularelemente.
         Das forAttribut des <label>Tags sollte 
         gleich dem idAttribut des <input> Elements sein, 
         um sie miteinander zu verbinden.
-    -->
-    <!--
-        Der <input type="text"> definiert ein einzeiliges
-        Eingabefeld für die Texteingabe.
-
-        Der <input type="password"> definiert ein einzeiliges
-        Eingabefeld für die Passwordeingabe.
-
-        Der <input type="submit"> definiert eine Schaltfläche
-        zum Senden der Formulardaten an einen Formularhandler.
     -->
     <form>
         <label for="fname">User name:</label><br>
