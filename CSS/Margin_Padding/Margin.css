@@ -1,0 +1,29 @@
+/*
+Die CSS margin-Eigenschaften werden verwendet, 
+um außerhalb definierter Grenzen einen Raum um 
+Elemente herum zu erstellen.
+
+Die Eigenschaften:
+1) margin-top
+2) margin-right
+3) margin-bottom
+4) margin-left
+5) margin: top right bottom left; (bekommt 4 Werte)
+6) margin: top&bottom right&left; (bekommt 2 Werte)
+7) margin: Alle4Ränder; (bekommt 1 Werte)
+ 
+auto: der Browser berechnet die Marge.
+Man kann die Eigenschaft margin auf "auto" einstellen, 
+sodass das Element horizontal zentriert wird.
+*/
+
+.myDiv{
+    background-color: aquamarine;
+    margin-left: auto;
+    margin-right: auto;
+    /*
+    oder einfach:
+    margin: auto; wird horizontal zentriert.
+    */
+    margin-top: 5%;
+}

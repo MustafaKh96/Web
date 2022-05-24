@@ -1,0 +1,21 @@
+/*
+Die CSS padding-Eigenschaften werden verwendet, 
+um Raum um den Inhalt eines Elements innerhalb 
+definierter Grenzen zu erzeugen.
+
+Die Eigenschaften:
+
+1) padding-top
+2) padding-right
+3) padding-bottom
+4) padding-left
+5) padding: oben rechts unten links
+6) padding: oben&unten rechts&links
+7) padding: alleRänder
+*/
+.myDiv{
+    width: 80%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 100px;
+}
