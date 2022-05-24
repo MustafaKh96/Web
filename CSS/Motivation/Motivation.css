@@ -12,6 +12,12 @@ Selektor{
 Der Selektor zeigt auf das HTML-Element, das formatiert werden muss.
 Ein Selektor enthält eine oder mehrere Deklarationen
 Jede Deklaration enthält einen CSS-Eigenschaft und einen Wert
+
+Mehrere Selektoren:
+Selektor1, Selektor2, Selektor3{
+    Eigenschaft:Wert; (Deklaration)
+    Eigenschaft:Wert; (Deklaration)
+}
 ---------------
 CSS-Selektoren:
 1) Das CSS-Element Selektor z.B: p oder h1 usw.
@@ -41,3 +47,4 @@ in head:
 3) Inline-CSS: <p style="color:red;">This is a paragraph.</p>
 ----------------
 */
+
