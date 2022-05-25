@@ -1,0 +1,21 @@
+/*
+Die display Eigenschaft ist die wichtigste CSS-Eigenschaft 
+zur Steuerung des Layouts.
+=>
+Die displayEigenschaft gibt an, 
+ob/wie ein Element angezeigt wird.
+
+Ein Element auf Blockebene beginnt immer auf einer 
+neuen Zeile und nimmt die gesamte verfügbare Breite ein.
+1) display: inline or inline-block;
+zeigt die Inhalte auf eine Zeile. Wie das Beispiel unten.
+2) display: block;
+zeigt die Inhalte untereinander. Wie das Beispiel unten.
+*/
+.p1{
+    display: inline-block;
+}
+
+a{
+    display: block;
+}

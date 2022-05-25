@@ -14,9 +14,19 @@
     line-height: 30px; /* Die weite zwischen den Zeilen */
 }
 #h2{
-    font-family:fantasy; /* Art der Schrift */
+    font-family:sans-serif, Impact; /* Art der Schrift */
+    /*
+    Man kann einen Ersatzwert für die Schriftfamilie hinzufügen, 
+    indem Sie einen anderen Schriftnamen durch ein Komma getrennt
+    hinzufügen. 
+    Ersatzwerte werden verwendet, wenn die Ausgangsschrift 
+    nicht gefunden wird/verfügbar ist.
+    */
     font-style: italic; /* schief */
     font-weight:lighter; /* Dicke der Schrifts */
     font-size: 40px; /* Die Grüße der Schrifts */
     text-shadow: 2px 2px 5px red;
+}
+.line{
+    display: inline;
 }
