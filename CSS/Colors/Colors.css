@@ -16,13 +16,45 @@
     color: rgba(11, 55, 200, 0.1);
 }
 
-/* Mit hex: #rrggbb (redred,greengreen,blueblue)
+/* 
+    Vielleicht sind Sie bereits mit Dezimalwerten 
+    oder Werten zur Basis 10 vertraut, 
+    die von 0 bis 9 gehen. Hexadezimalwerte 
+    oder Werte zur Basis 16 gehen von 0 bis 9, 
+    dann A bis F:
+    0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F
+
+    => #AABBCC
+    AA für red
+    BB für green
+    CC für blue
+
+    Mit hex: #rrggbb (redred,greengreen,blueblue)
    (min: #000000),(max: #ffffff) */
 #p3{
     color: #ff0000;
 }
 
-/* hsl(hue, saturation, lightness); */
+/* 
+Das HSL-Farbmodell (Farbton, Sättigung und Helligkeit) 
+ist eine weitere Möglichkeit zur Darstellung von Farben.
+
+Die CSS-Funktion hsl akzeptiert drei Werte: eine Zahl 
+von 0 bis 360 für den Farbton, einen Prozentwert 
+von 0 bis 100 für die Sättigung und einen Prozentwert 
+von 0 bis 100 für die Helligkeit.
+
+Wenn Sie sich einen Farbkreis vorstellen, liegt der 
+Farbton Rot bei 0 Grad, Grün bei 120 Grad und Blau 
+bei 240 Grad.
+
+Die Sättigung ist die Intensität einer Farbe von 0 % 
+oder Grau bis 100 % für eine reine Farbe.
+
+Übersetzt mit www.DeepL.com/Translator 
+(kostenlose Version)
+
+=> hsl(hue, saturation, lightness); */
 #p4{
     color: hsl(40, 100%, 10%);
 }

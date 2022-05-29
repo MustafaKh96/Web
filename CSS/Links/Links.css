@@ -1,0 +1,69 @@
+/*
+Links können mit jeder CSS-Eigenschaft 
+gestaltet werden 
+(z . B. color, font-family, background, etc.).
+
+Darüber hinaus können Links je nach Status unterschiedlich gestaltet werden.
+
+Die vier Verknüpfungszustände sind:
+
+a:link- ein normaler, nicht besuchter Link
+a:visited- ein Link, den der Benutzer besucht hat
+a:hover- ein Link, wenn der Benutzer mit der Maus darüber fährt
+a:active- ein Link in dem Moment, in dem er angeklickt wird
+*/
+a:link {
+    color: red;
+} 
+/* visited link */
+a:visited {
+    color: green;
+}
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+/* selected link */
+a:active {
+    color: blue;
+}
+/*
+WICHTIG: 
+Diese Rheinfolge ist wichtig =>
+Beim Festlegen des Stils für mehrere Verknüpfungszustände 
+gibt es einige Reihenfolgeregeln:
+
+1) a:hover MUSS nach a:link und a:visited kommen
+2) a:active MUSS nach a:hover kommen
+*/
+
+/*
+Die text-decorationEigenschaft wird hauptsächlich verwendet, 
+um Unterstreichungen von Links zu entfernen:
+*/
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    text-decoration: underline;
+}
+/*Link wie Button*/
+
+#Button:link, #Button:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid green;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+#Button:hover, #Button:active {
+  background-color: green;
+  color: white;
+}

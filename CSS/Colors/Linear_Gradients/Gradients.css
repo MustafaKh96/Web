@@ -1,0 +1,25 @@
+/*
+Um einen linearen Farbverlauf zu erstellen, 
+müssen Sie mindestens zwei Farbstopps definieren. 
+Farbstopps sind die Farben, zwischen denen Sie glatte 
+Übergänge rendern möchten. Sie können neben dem 
+Verlaufseffekt auch einen Startpunkt und eine Richtung 
+(oder einen Winkel) festlegen.
+*/
+
+/*
+Syntax:
+background: linear-gradient(red, yellow, blue); //von oben nach unten (Standard)
+background: linear-gradient(to right, red, yellow, blue); //links nach rechts
+background: linear-gradient(to bottom right, red, yellow); //oben links nach unten rechts
+
+ODER MIT grad:
+Dies zeigt, wie Winkel auf linearen Farbverläufen verwendet werden:
+background: linear-gradient(0deg, red, yellow); // von oben nach unten (Standard)
+background: linear-gradient(90deg, red, yellow, blue); //links nach rechts
+background: linear-gradient(180deg, red, yellow); // von unten nach oben 
+*/
+#grad1 {
+    height: 200px;
+    background: linear-gradient(to right,red, yellow, blue);
+}
