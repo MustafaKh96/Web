@@ -4,9 +4,34 @@
     text-decoration: underline; /* Dekoration */
     text-decoration-color:blue;
     text-decoration-style: dotted;
-    text-shadow: 2px 2px 5px red; /* für Schatten 
-    (horizontal,vertikal,unschärfeeffekt,farbe) */
-    text-transform: uppercase; /* Umwandlung */
+    /* 
+    Für Schatten:
+    (horizontal,vertikal,unschärfeeffekt,farbe) 
+    */
+    text-shadow: 2px 2px 5px red; 
+    /* Umwandlung: (text-transform)
+    text-transform: uppercase;
+    => Wandele alle Buchstaben zu großen Buchstaben.
+    text-transform: lowercase;
+    => Wandele alle Buchstaben zu kleinen Buchstaben.
+    text-transform: capitalize;
+    => jede Anfangbuchstabe wird groß.
+    ...
+    */
+    /*
+    Text Spacing:
+    Die wichtigen Eigenschaften sind:
+    1) text-indent: 30px; wird verwendet, 
+    um den Einzug der ersten Zeile eines Textes festzulegen.
+    2) letter-spacing: 10px; wird verwendet, um den Abstand 
+    zwischen den Zeichen in einem Text anzugeben..
+    3) line-height: 10px; wird verwendet, 
+    um den Abstand zwischen Zeilen anzugeben.
+    4) word-spacing: wird verwendet, um den Abstand zwischen 
+    den Wörtern in einem Text anzugeben.
+    5) white-space: ?
+    */
+    text-transform: uppercase;
     letter-spacing: 10px; /* Die breite zwischen den Buchstaben */
     word-spacing: 10px; /* Die breite zwischen den Worten */
 }
@@ -23,8 +48,9 @@
     nicht gefunden wird/verfügbar ist.
     */
     font-style: italic; /* schief */
-    font-weight:lighter; /* Dicke der Schrifts */
-    font-size: 40px; /* Die Grüße der Schrifts */
+    font-weight:lighter; /* Dicke des Schrifts */
+    font-size: 40px; /* Die Grüße des Schrifts */
+    font-variant: small-caps;/*Die Art des Schrifts */
     text-shadow: 2px 2px 5px red;
 }
 .line{

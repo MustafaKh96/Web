@@ -1,0 +1,15 @@
+/*
+Es besteht aus: Von Innen nach außen:
+Der eigentliche Inhalt, Padding, Borders, Outline, Margins.
+*/
+
+div {
+    background-color: lightgrey;
+    width: 300px;
+    border: 15px solid green;
+    outline-width: 3px;
+    outline-style: double;
+    outline-color: blueviolet;
+    padding: 50px;
+    margin: 20px;
+}

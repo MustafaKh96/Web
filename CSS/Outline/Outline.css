@@ -1,0 +1,22 @@
+/*
+Ein Outline ist eine Linie, die außerhalb von dem Border des Elements gezogen wird.
+
+CSS hat die folgenden OutlineEigenschaften:
+
+outline-style: dotted, dashed, solid, ... //Ergorderlich
+outline-color: ...
+outline-width: ... 
+outline: outline-width outline-style outline-color
+
+outline-offset: ...px
+Die outline-offset fügt einen Abstand zwischen dem 
+Outline und dem Rand eines Elements hinzu. 
+*/
+p {
+    margin: 30px;
+    background:yellow;
+    border: 10px solid black;
+    outline: 1px solid red;
+    outline-offset: 15px;
+    outline-width: 10px;
+}

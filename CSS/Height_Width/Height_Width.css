@@ -1,0 +1,43 @@
+/*
+Das CSS height und width die Eigenschaften werden verwendet, 
+um die Höhe und Breite eines Elements festzulegen.
+
+height und width können die folgenden Werte haben:
+
+1) auto - Dies ist die Standardeinstellung. Der Browser berechnet die Höhe und Breite
+2) length- Definiert die Höhe/Breite in px, cm etc.
+3) % - Definiert die Höhe/Breite in Prozent des umgebenden Blocks
+*/
+#div1{
+    background-color: rgb(44, 44, 60);
+    text-align: center;
+    padding-top: 30px;
+    margin: 0 auto;
+    font-size: 24px;
+    color: white;
+    width: 50%;
+    height: 100px;
+}
+/*
+Die CSS max-width/height-Eigenschaft wird verwendet, 
+um die maximale Breite/Höhe eines Elements festzulegen.
+
+Die CSS min-width/height-Eigenschaft wird verwendet, 
+um die minimale Breite/Höhe eines Elements festzulegen.
+
+Sie können die folgenden Werte haben:
+
+1) auto - Dies ist die Standardeinstellung. Der Browser berechnet die Höhe und Breite
+2) length- Definiert die Höhe/Breite in px, cm etc.
+3) % - Definiert die Höhe/Breite in Prozent des umgebenden Blocks
+*/
+#div2{
+    background-color: rgb(44, 44, 60);
+    text-align: center;
+    padding-top: 30px;
+    margin: 0 auto;
+    font-size: 24px;
+    color: white;
+    max-width: 50%;
+    min-height: 100px;
+}

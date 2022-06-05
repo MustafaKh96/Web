@@ -1,0 +1,70 @@
+/*
+Das Aussehen einer HTML-Tabelle kann mit CSS stark verbessert werden:
+1)  Border:
+table, th, td {
+  border: 1px solid;
+}
+=> Border um alles
+table{
+    border: 1px solid red;
+}
+=> Border NUR um die Tabelle.
+*/
+table{
+    border: 1px solid red;
+}
+/*
+Width:
+Die Breite der Tablle anlegen:
+table {
+  width: 100%;
+}
+*/
+/*
+Width:
+Die Breite der Tablle anlegen:
+table {
+  width: 100%;
+}
+text-align: 
+legt die horizontale Ausrichtung (wie links, rechts 
+oder zentriert) des Inhalts in <th> oder <td> fest.
+vertical-align:
+legt die vertikale Ausrichtung (wie oben, unten 
+oder Mitte) des Inhalts in <th> oder <td> fest.
+
+// Um den Abstand zwischen dem Rahmen und dem Inhalt 
+in einer Tabelle zu steuern, verwenden Sie die paddingEigenschaft 
+für die Elemente <td> und <th>.
+*/
+table {
+    width: 100%;
+}
+th, td{
+    border-bottom: 1px solid #ddd;
+    height: 50px;
+}
+th{
+    background-color: aqua;
+    color: white;
+}
+td{
+    text-align: center;
+    vertical-align: middle;
+}
+/*
+Table Style:
+:hover :
+man verwendet :hover auf <tr>, 
+um Tabellenzeilen hervorzuheben, 
+wenn Sie mit der Maus darüber fahren.
+tr:nth-child(odd/even):
+wird verwendet, um die geraden, oder ungeraden, 
+Zeilen zu stylen.
+*/
+tr:hover{
+    background-color: blue;
+}
+tr:nth-child(even){
+    background-color: #ddd;
+}

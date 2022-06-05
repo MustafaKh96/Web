@@ -1,0 +1,44 @@
+/*
+Die position Eigenschaft gibt die Art der 
+Positionierungsmethode an, die für ein Element verwendet wird.
+
+* Es gibt fünf verschiedene Positionswerte:
+
+1) static.
+2) absolute:
+Ein Element mit position: absolute; wird relativ ((zum Ansichtsfenster)) positioniert.
+3) relative:
+Ein Element mit position: relative; wird relativ zu seiner ((normalen Position)) positioniert.
+4) fixed: 
+    Das Element bleibt immer an der gleichen Stelle, 
+    wo er posetioniert ist, auch wenn die Seite gescrollt wird.
+5) sticky:
+    Es wird relativ positioniert, bis eine bestimmte Versatzposition 
+    im Ansichtsfenster erreicht wird - 
+    dann "klebt" es an Ort und Stelle (wie position:fixed).
+
+    Wichtig:
+    Man muss außerdem mindestens eines von top, right, bottom oder left angeben.
+    z.B: top: 0;
+    Sehe Beispiel:
+*/
+.Div1{
+    width: 50%;
+    height: 50px;
+    margin-left: 100px;
+    margin-top: 50px;
+    background-color: aquamarine;
+    bottom: 10px;
+    position: sticky;
+}
+
+h1{
+    text-align: center;
+    padding-top: 20px;
+}
+.Div2{
+    background-color: aquamarine;
+    height: 80px;
+    top: 0;
+    position: sticky;
+}

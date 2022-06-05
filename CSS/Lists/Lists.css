@@ -1,0 +1,32 @@
+/*
+1)  Die list-style-type gibt den Typ 
+    der Listenelementmarkierung an.
+    list-style-type: circle;
+    list-style-type: square;
+    ...
+2)  Die list-style-image gibt ein Bild als 
+    Listenelementmarkierung an.
+3)  Die list-style-position gibt die Position 
+    der Listenelementmarkierungen an.
+
+    "list-style-position: outside;" bedeutet, 
+    dass sich die Aufzählungspunkte außerhalb des 
+    Listenelements befinden. 
+    Der Anfang jeder Zeile eines Listenelements wird 
+    vertikal ausgerichtet. Dies ist standardmäßig.
+
+    "list-style-position: inside;" bedeutet, 
+    dass sich die Aufzählungspunkte innerhalb 
+    des Listenelements befinden. Da es Teil des 
+    Listenelements ist, wird es Teil des Textes und 
+    schiebt den Text an den Anfang.
+
+4)  Die list-style ist eine Kurzschrift-Eigenschaft. 
+    Es wird verwendet, um alle Listeneigenschaften in einer 
+    Deklaration festzulegen.
+    list-style: square inside url("sqpurple.gif");
+*/
+ul.a{
+    list-style-type: circle;
+    list-style-position: inside;
+}
