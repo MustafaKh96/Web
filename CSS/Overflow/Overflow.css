@@ -1,0 +1,24 @@
+/*
+Overflow steuert, was mit Inhalten passiert, die zu groß sind, um in einen Bereich zu passen.
+Overflow funktioniert nur für Blockelemente mit einer bestimmten Höhe.
+z.B: overflow: hidden;
+
+Overflow hat die folgenden Werte:
+1)  visible: Standard. Der Überlauf wird nicht abgeschnitten. 
+    Der Inhalt wird außerhalb der Box des Elements gerendert.
+2)  hidden: Der Überlauf wird abgeschnitten und 
+    der Rest des Inhalts ist unsichtbar
+3)  scroll: Der Überlauf wird abgeschnitten und eine Bildlaufleiste hinzugefügt, 
+    um den Rest des Inhalts anzuzeigen
+4)  auto- Ähnlich wie scroll, fügt aber nur bei Bedarf Bildlaufleisten hinzu
+___________________________________________________
+overflow-x: gibt an, was mit den linken/rechten Rändern des Inhalts geschehen soll.
+overflow-y: gibt an, was mit den oberen/unteren Rändern des Inhalts geschehen soll.
+
+*/
+div{
+    background-color: aqua;
+    height: 100px;
+    width: 200px;
+    overflow: scroll;
+}
